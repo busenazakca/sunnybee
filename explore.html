@@ -2,39 +2,132 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Keşfet | SunnyBee</title>
+  <title>SunnyBee | Keşfet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fffaf0;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #ffcc33, #ffb703);
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: 20px auto 0;
+      font-size: 18px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .content h2 {
+      color: #ffb703;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      background: #fff3cd;
+      padding: 25px;
+      border-left: 5px solid #ffb703;
+      margin-top: 40px;
+    }
+  </style>
 </head>
+
 <body>
 
+<!-- HEADER -->
 <header class="header">
   <a href="index.html" class="logo">SunnyBee</a>
+
+  <nav class="nav">
+    <ul class="menu">
+
+      <li class="dropdown">
+        <span>Ürünler</span>
+        <div class="mega-menu">
+          <div>
+            <strong>Balmumu Ürünleri</strong>
+            <a href="products.html">Balmumu Bezler</a>
+            <a href="products.html">Balmumu Keseler</a>
+            <a href="products.html">Üçlü Setler</a>
+          </div>
+          <div>
+            <strong>SunnyBee Home</strong>
+            <a href="products.html">Mutfak Bezleri</a>
+            <a href="products.html">Doğal Ürünler</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <span>Keşfet</span>
+        <div class="mega-menu single">
+          <a href="blog.html">Blog</a>
+          <a href="explore.html">SunnyBee’yi Keşfet</a>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <span>Kurumsal</span>
+        <div class="mega-menu single">
+          <a href="corporate.html">Hakkımızda</a>
+          <a href="contact.html">İletişim</a>
+        </div>
+      </li>
+
+    </ul>
+  </nav>
 </header>
 
-<section class="story">
-  <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
-  <div>
-    <h1>SunnyBee’yi Keşfet</h1>
-    <p>
-      SunnyBee, tek kullanımlık plastiklere karşı doğadan ilham alan
-      sürdürülebilir çözümler üretir.
-    </p>
+<!-- HERO -->
+<section class="hero">
+  <h1>SunnyBee’yi Keşfet</h1>
+  <p>
+    İlham veren fikirlerin, doğal üretimin ve samimi bir anlayışın buluştuğu yerdesiniz.
+  </p>
+</section>
+
+<!-- CONTENT -->
+<section class="content">
+  <h2>SunnyBee Nedir?</h2>
+  <p>
+    SunnyBee; doğallığı, sadeliği ve güveni merkezine alan bir üretim ve paylaşım anlayışıdır.
+  </p>
+
+  <h2>Neyi Temsil Ediyoruz?</h2>
+  <p>
+    Emek, kalite ve sürdürülebilirlik üzerine kurulu bir bakış açısını temsil eder.
+  </p>
+
+  <div class="highlight">
+    SunnyBee’yi keşfederken yerel üretimin gücünü ve doğal dokunuşların değerini hissedersiniz.
   </div>
 </section>
-
-<section class="features">
-  <div>🌿 El Emeği Üretim</div>
-  <div>♻️ Kompost Edilebilir</div>
-  <div>🍯 Doğal Balmumu</div>
-  <div>🧵 Organik Pamuk</div>
-</section>
-
 <footer class="footer">
   <div>
     <strong>SunnyBee</strong>
     <a href="index.html">Ana Sayfa</a>
-    <a href="products.html">Ürünler</a>
+    <a href="blog.html">Blog</a>
   </div>
 </footer>
 

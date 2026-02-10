@@ -2,52 +2,99 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Ürünler | SunnyBee</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tüm Ürünler | SunnyBee</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header class="header">
   <a href="index.html" class="logo">SunnyBee</a>
+
   <nav class="nav">
-    <ul>
-      <li><a href="products.html">Ürünler</a></li>
-      <li><a href="explore.html">Keşfet</a></li>
-      <li><a href="corporate.html">Kurumsal</a></li>
+    <ul class="menu">
+
+      <!-- ÜRÜNLER -->
+      <li class="dropdown">
+        <span>Ürünler</span>
+        <div class="mega-menu">
+          <div>
+            <strong>Balmumu Ürünleri</strong>
+            <a href="products.html">Balmumu Bezler</a>
+            <a href="products.html">Balmumu Keseler</a>
+            <a href="products.html">Üçlü Setler</a>
+          </div>
+          <div>
+            <strong>SunnyBee Home</strong>
+            <a href="products.html">Mutfak Bezleri</a>
+            <a href="products.html">Doğal Ürünler</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- KEŞFET -->
+      <li class="dropdown">
+        <span>Keşfet</span>
+        <div class="mega-menu single">
+          <a href="blog.html">Blog</a>
+          <a href="explore.html">SunnyBee’yi Keşfet</a>
+        </div>
+      </li>
+
+      <!-- KURUMSAL -->
+      <li class="dropdown">
+        <span>Kurumsal</span>
+        <div class="mega-menu single">
+          <a href="corporate.html">Hakkımızda</a>
+          <a href="contact.html">İletişim</a>
+        </div>
+      </li>
+
     </ul>
   </nav>
 </header>
 
-<section class="categories">
-  <h1>Tüm Ürünler</h1>
+  <!-- ÜRÜNLER BAŞLIK -->
+  <section class="page-header">
+    <h1>Tüm Ürünler</h1>
+    <p>
+      <a href="index.html">SunnyBee Home</a> /
+      <span>Balmumu Bezler</span>
+    </p>
+  </section>
 
-  <div class="category-grid">
-    <a href="#">Balmumu Bezler</a>
-    <a href="#">Balmumu Keseler</a>
-    <a href="#">Üçlü Setler</a>
-    <a href="#">SunnyBee Home</a>
-  </div>
-</section>
+  <!-- EN SEVİLEN ÜRÜNLER -->
+  <section class="products-section">
+    <h2>En Sevilen Ürünler</h2>
 
-<section class="blog-preview">
-  <h2>En Sevilen Ürünler</h2>
-  <div class="blog-cards">
-    <div>Üçlü Balmumu Bez Seti<br><strong>₺349</strong></div>
-    <div>Balmumu Kese<br><strong>₺179</strong></div>
-    <div>SunnyBee Home Set<br><strong>₺499</strong></div>
-  </div>
-</section>
+    <div class="products-grid">
 
+      <div class="product-card">
+        <img src="images/bez-seti.jpg" alt="Üçlü Balmumu Bez Seti">
+        <h3>Üçlü Balmumu Bez Seti</h3>
+        <p class="price">₺349</p>
+        <a href="explore.html" class="btn">Ürünü İncele</a>
+      </div>
+
+      <div class="product-card">
+        <img src="images/balmumu-kese.jpg" alt="Balmumu Kese">
+        <h3>Balmumu Kese</h3>
+        <p class="price">₺179</p>
+        <a href="explore.html" class="btn">Ürünü İncele</a>
+      </div>
+
+      <div class="product-card">
+        <img src="images/home-set.jpg" alt="SunnyBee Home Set">
+        <h3>SunnyBee Home Set</h3>
+        <p class="price">₺499</p>
+        <a href="explore.html" class="btn">Ürünü İncele</a>
+      </div>
+
+    </div>
+  </section>
 <footer class="footer">
   <div>
     <strong>SunnyBee</strong>
-    <a href="explore.html">Keşfet</a>
+    <a href="index.html">Ana Sayfa</a>
     <a href="blog.html">Blog</a>
-  </div>
-  <div>
-    <strong>İletişim</strong>
-    <p>info@sunnybee.com</p>
   </div>
 </footer>
 
