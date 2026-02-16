@@ -301,3 +301,74 @@ footer {
 .btn:hover {
   background: #d99600;
 }
+
+
+
+border: 1px solid #ddd;
+font-size: 14px;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+outline: none;
+border-color: #f4b400;
+}
+
+
+.contact-form button {
+background: #f4b400;
+color: #222;
+border: none;
+padding: 12px;
+border-radius: 8px;
+font-weight: 600;
+cursor: pointer;
+transition: 0.2s;
+}
+
+
+.contact-form button:hover {
+transform: translateY(-2px);
+opacity: 0.9;
+}
+
+
+/* SAATLER */
+.hours {
+list-style: none;
+padding: 0;
+}
+
+
+.hours li {
+padding: 6px 0;
+border-bottom: 1px solid #eee;
+}
+
+
+/* BUTONLAR */
+.whatsapp-btn {
+display: inline-block;
+background: #25D366;
+color: white;
+padding: 10px 16px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: 600;
+}
+
+
+.link-btn {
+display: inline-block;
+margin-top: 8px;
+color: #f4b400;
+font-weight: 600;
+text-decoration: none;
+}
+
+
+.highlight {
+background: #fff7da;
+border: 2px solid #f4b400;
+}
