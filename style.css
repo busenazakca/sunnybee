@@ -1,374 +1,151 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
 }
 
-/* BODY – EN KRİTİK KISIM */
-body {
-  background: #fffdf8;
-  color: #2e2e2e;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body{
+background:#fffdf7;
+color:#333;
 }
 
 /* HEADER */
-.header {
-  height: 80px;
-  padding: 0 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #ffffff;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:white;
+border-bottom:1px solid #eee;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #f4a300;
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#f4a300;
 }
 
-/* NAV */
-.nav {
-  display: flex;
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#333;
+font-weight:500;
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-
-.menu li {
-  position: relative;
-}
-
-.menu span {
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-/* MEGA MENU */
-.mega-menu {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, 10px);
-  background: white;
-  padding: 20px 24px;
-  border-radius: 14px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.25s ease;
-  min-width: 200px;
-  z-index: 999;
-}
-
-.dropdown:hover .mega-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(-50%, 0);
-}
-
-.mega-menu a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-
-.mega-menu a:hover {
-  color: #f4a300;
+nav a:hover{
+color:#f4a300;
 }
 
 /* HERO */
-.hero {
-  height: 70vh;
-  background: url("images/sunnybee-hero.jpeg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  padding: 60px;
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:#fff6d8;
 }
 
-.hero-text {
-  background: rgba(255,255,255,0.85);
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 500px;
+.hero h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.hero button{
+padding:12px 30px;
+border:none;
+background:#f4a300;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.hero button:hover{
+background:#d98d00;
 }
 
 /* FEATURES */
-.features {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  max-width: 1100px;
-  margin: 80px auto;
+
+.features{
+padding:80px 10%;
+text-align:center;
 }
 
-.feature {
-  flex: 1;
-  text-align: center;
+.feature-container{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:40px;
 }
 
-.feature img {
-  width: 120px;
-  margin-bottom: 20px;
+.feature{
+background:white;
+padding:30px;
+border-radius:10px;
+width:250px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
-.feature p {
-  font-size: 14px;
-  color: #6b6b6b;
+/* FOOTER */
+
+footer{
+margin-top:60px;
+text-align:center;
+padding:40px;
+background:#333;
+color:white;
+}
+.products,
+.wholesale,
+.dealer,
+.about,
+.contact{
+padding:80px 10%;
+text-align:center;
 }
 
-/* STORY */
-.story {
-  display: flex;
-  gap: 40px;
-  padding: 60px;
-  align-items: center;
+.product-container,
+.wholesale-container{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
 }
 
-.story img {
-  width: 45%;
-  border-radius: 16px;
+.product,
+.wholesale-box{
+background:white;
+padding:30px;
+border-radius:10px;
+width:250px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
-/* MAIN */
-main {
-  flex: 1;
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
 }
 
-/* FOOTER – GARANTİLİ ALTTA */
-footer {
-  width: 100%;
-  background: #faf7f2;
-  text-align: center;
-  padding: 40px 0 30px;
-  margin-top: auto;
-}
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 20px;
+input, textarea{
+padding:12px;
+border:1px solid #ddd;
+border-radius:5px;
 }
 
-.footer-icons img {
-  width: 40px;
-  opacity: 0.75;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .features {
-    flex-direction: column;
-  }
-
-  .story {
-    flex-direction: column;
-  }
-}
-/* === HEADER FIX (EXPLORE) === */
-.header {
-  height: 80px;
-  padding: 0 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #ffffff;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #f4a300;
-}
-
-.nav .menu {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav .menu li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.nav .menu li a:hover {
-  color: #f4a300;
-}
-/* === ÜRÜNLER SAYFASI === */
-
-.page-header {
-  padding: 40px 80px 20px;
-}
-
-.page-header h1 {
-  font-size: 36px;
-  margin-bottom: 8px;
-}
-
-.page-header p {
-  font-size: 14px;
-  color: #777;
-}
-
-.page-header a {
-  color: #f2a900;
-  text-decoration: none;
-}
-
-/* Ürünler Alanı */
-.products-section {
-  padding: 40px 80px;
-}
-
-.products-section h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
-/* Grid yapı */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-/* Kart */
-.product-card {
-  background: #fff;
-  border-radius: 18px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-  transition: 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 35px rgba(0,0,0,0.1);
-}
-
-.product-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 14px;
-  margin-bottom: 15px;
-}
-
-.product-card h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.price {
-  font-size: 18px;
-  font-weight: 600;
-  color: #f2a900;
-  margin-bottom: 14px;
-}
-
-/* Buton */
-.btn {
-  display: inline-block;
-  padding: 10px 22px;
-  background: #f2a900;
-  color: #fff;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #d99600;
-}
-
-
-
-border: 1px solid #ddd;
-font-size: 14px;
-}
-
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-outline: none;
-border-color: #f4b400;
-}
-
-
-.contact-form button {
-background: #f4b400;
-color: #222;
-border: none;
-padding: 12px;
-border-radius: 8px;
-font-weight: 600;
-cursor: pointer;
-transition: 0.2s;
-}
-
-
-.contact-form button:hover {
-transform: translateY(-2px);
-opacity: 0.9;
-}
-
-
-/* SAATLER */
-.hours {
-list-style: none;
-padding: 0;
-}
-
-
-.hours li {
-padding: 6px 0;
-border-bottom: 1px solid #eee;
-}
-
-
-/* BUTONLAR */
-.whatsapp-btn {
-display: inline-block;
-background: #25D366;
-color: white;
-padding: 10px 16px;
-border-radius: 8px;
-text-decoration: none;
-font-weight: 600;
-}
-
-
-.link-btn {
-display: inline-block;
-margin-top: 8px;
-color: #f4b400;
-font-weight: 600;
-text-decoration: none;
-}
-
-
-.highlight {
-background: #fff7da;
-border: 2px solid #f4b400;
+form button{
+padding:12px;
+background:#f4a300;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:5px;
 }
